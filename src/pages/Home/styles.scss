@@ -1,0 +1,44 @@
+.home {
+  display: grid;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  place-items: center;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cards-amount-container {
+    align-items: center;
+    display: flex;
+    margin: 1rem 0;
+
+    button {
+      background-color: whitesmoke;
+      border: 2px solid black;
+      border-radius: 4px;
+      font-size: 1.15rem;
+      height: 3rem;
+      margin: 0 0.5rem;
+      transition: all 0.2s;
+      width: 3rem;
+
+      &:not(:disabled):hover {
+        background-color: #28666E88;
+        color: white;
+      }
+    }
+  }
+
+  .card-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    padding-bottom: 0.5rem;
+  }
+}
