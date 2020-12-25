@@ -36,8 +36,12 @@ a {
   }
 }
 
-p {
+button, p {
   font-size: 1.15rem;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 1.35rem;
+  }
 
   @media only screen and (min-width: 1200px) {
     font-size: 1.5rem;

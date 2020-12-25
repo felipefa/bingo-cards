@@ -42,8 +42,8 @@ const BingoCard = () => {
 
   const data = useMemo(
     () =>
-      BINGO.map((currentLetter, columnIndex) => ({
-        letter: currentLetter,
+      BINGO.map((currentCharacter, columnIndex) => ({
+        character: currentCharacter,
         numbers: generateNumbers(columnIndex),
       })),
     [generateNumbers]
@@ -52,15 +52,15 @@ const BingoCard = () => {
   return (
     <div className="bingo-card">
       {data.map((column, columnIndex) => (
-        <div className="column" key={column.letter}>
-          <p className="cell header">{column.letter}</p>
+        <div className="column" key={column.character}>
+          <p className="cell header">{column.character}</p>
           {column.numbers.map((number, numberIndex) => (
             // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
             <p
               className={`cell${
                 numbersChecked.includes(number) ? ' checked' : ''
               }`}
-              key={`${column.letter}_${number}`}
+              key={`${column.character}_${number}`}
               onClick={() =>
                 columnIndex === 2 && numberIndex === 2
                   ? null
