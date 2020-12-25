@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,11 +29,12 @@ button, select {
 }
 
 a {
+  color: $color-primary;
   text-decoration: none;
   transition: all 0.2s;
 
   &:hover {
-    color: #28666e;
+    color: $color-primary-light;
     text-decoration: underline;
   }
 }
@@ -49,6 +52,6 @@ button, p {
 }
 
 #root {
-  background-color: #f2e8cf;
+  background-color: $color-bg;
   height: 100%;
 }

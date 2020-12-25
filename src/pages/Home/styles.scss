@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .home {
   display: grid;
   height: 100%;
@@ -15,8 +17,8 @@
     margin: 1rem 0;
 
     button {
-      background-color: whitesmoke;
-      border: 2px solid black;
+      background-color: $color-bingo-card-bg;
+      border: 2px solid $color-black;
       border-radius: 4px;
       height: 3rem;
       margin: 0 0.5rem;
@@ -24,8 +26,8 @@
       width: 3rem;
 
       &:not(:disabled):hover {
-        background-color: #28666E88;
-        color: white;
+        background-color: $color-primary-light;
+        color: $color-white;
       }
     }
   }
