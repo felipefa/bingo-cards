@@ -54,7 +54,7 @@ const Home = () => {
       <footer>
         <small>
           <a
-            href="https://github.com/felipefa"
+            href="https://felipefa.now.sh"
             rel="noopener noreferrer"
             target="_blank"
           >
